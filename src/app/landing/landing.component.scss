@@ -1,9 +1,66 @@
-.wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-  background-color: rgb(57, 171, 253);
-  // background-color: rgb(57, 171, 253);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  background-color: rgb(57, 171, 253);
+}
+
+.black-container {
+  background-color: black;
+  margin-left: 8%;
+  height: 100vh;
+  width: 43%;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-left: 2rem;
+  line-height: 4rem;
+}
+
+.text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-1 {
+  font-size: 3rem;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-2 {
+  font-size: 4.5rem;
+  color: white;
+  font-family: 'Heebo', sans-serif;
+}
+
+.text-3 {
+  font-size: 2.5rem;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-4 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 2rem;
+  margin-right: 12rem;
+}

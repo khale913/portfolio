@@ -3,17 +3,24 @@
 </head>
 
 <ul class="nav navbar-nav">
-  <li class="nav-listItem">
+  <li class="nav-listItem" (click)="goToHome()">
     <a>KELTON</a>
   </li>
-  <li class="nav-listItem">
+  <li class="nav-listItem" (click)="goToSkills()">
     <a>SKILLS</a>
   </li>
-  <li class="nav-listItem">
+  <li class="nav-listItem" (click)="goToProjects()">
     <a>PROJECTS</a>
+  </li>
+  <li class="nav-listItem" (click)="goToContact()">
+    <a>CONTACT</a>
   </li>
   <li class="nav-listItem">
     <a>RESUME</a>
   </li>
-  <li><i class="fa-brands fa-instagram"></i></li>
+
+  <div class="logo-container">
+    <img class="instagram-logo" src="../../assets/icons/instagram-brands.svg" alt="">
+    <img src="../../assets/icons/github-brands.svg" alt="" class="github-logo">
+  </div>
 </ul>

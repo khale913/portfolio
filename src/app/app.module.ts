@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NewProjectsComponent } from './new-projects/new-projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutUsComponent,
     LandingComponent,
     ProjectsComponent,
+    NewProjectsComponent,
+    ContactComponent,
 
   ],
   imports: [
