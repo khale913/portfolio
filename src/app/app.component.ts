@@ -7,6 +7,8 @@ import { ViewportScroller } from "@angular/common";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  navOpen: boolean = false;
+
   constructor(private router: Router, private scroller: ViewportScroller) {
   }
 
@@ -27,6 +29,15 @@ export class AppComponent {
     document.getElementById("targetProjects")?.scrollIntoView({
       behavior: "smooth"
     })
+  }
+
+  openNav() {
+    this.navOpen = true;
+  }
+
+  closeNav() {
+    this.navOpen = false;
+    console.log('Close attempted')
   }
 
 }

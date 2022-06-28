@@ -18,19 +18,17 @@
     rel="stylesheet">
 </head>
 <div class="content">
-  <!-- <ul class="nav navbar-nav">
-    <li class="nav-listItem">
-      <a (click)="goToHome()">Home</a>
-    </li>
-    <li class="nav-listItem">
-      <a (click)="goToAboutUs()">About Me</a>
-    </li>
-    <li class="nav-listItem">
-      <a (click)="goToProjects()">Projects</a>
-    </li>
-  </ul> -->
-
-
+  <div class="small-nav">
+    <img class="small-nav-logo" src="../assets/images/bars-solid.svg" alt="" (click)="openNav()">
+  </div>
+  <div id="mySidenav" class="sidenav" [ngClass]="{'active-nav': navOpen === true}">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a class="side-link" href="#">KELTON</a>
+    <a class="side-link" href="#">SKILLS</a>
+    <a class="side-link" href="#">PROJECTS</a>
+    <a class="side-link" href="#">CONTACT</a>
+    <a class="side-link" href="#">RESUME</a>
+  </div>
   <app-landing id="targetHome"></app-landing>
   <app-about-us id="targetSkills"></app-about-us>
   <app-new-projects id="targetProjectsNew"></app-new-projects>
