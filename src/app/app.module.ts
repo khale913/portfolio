@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LandingComponent } from './landing/landing.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { LandingComponent } from './landing/landing.component';
     AppComponent,
     AboutUsComponent,
     LandingComponent,
+    ProjectsComponent,
 
   ],
   imports: [

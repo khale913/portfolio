@@ -1,10 +1,20 @@
-<ul class="nav navbar-nav">
+<header>
+  <ul class="nav navbar-nav">
 
-  <li>
-    <a (click)="goToAboutUs()">About Us</a>
-  </li>
+    <li>
+      <a (click)="goToHome()">Home</a>
+    </li>
+    <li>
+      <a (click)="goToAboutUs()">About Me</a>
+    </li>
+    <li>
+      <a (click)="goToProjects()">Projects</a>
+    </li>
 
-</ul>
-<router-outlet></router-outlet>
-<app-landing></app-landing>
-<app-about-us></app-about-us>
+  </ul>
+</header>
+
+<app-landing id="targetHome"></app-landing>
+<app-about-us id="targetAbout"></app-about-us>
+<app-projects id="targetProjects"></app-projects>
+<!-- <router-outlet></router-outlet> -->
