@@ -2,6 +2,11 @@ body {
   height: 100vh;
 }
 
+.mobile-landing {
+  display: none;
+  visibility: hidden;
+}
+
 .intro-text {
   display: flex;
   flex-direction: column;
@@ -202,7 +207,9 @@ body {
 
 
  @media only screen and (max-width: 480px) {
-
+  .mobile-landing {
+    display: block;
+  }
 
  }
 
